@@ -6,6 +6,14 @@ describe('fizzBuzz', () => {
     expect(fizzBuzz(15)).toBe('FizzBuzz');
     expect(fizzBuzz(30)).toBe('FizzBuzz');
   });
+  test('returns Fizz for multiples of 3', () => {
+    expect(fizzBuzz(6)).toBe('Fizz');
+    expect(fizzBuzz(12)).toBe('Fizz');
+  });
+  test('returns Buzz form multiples of 5', () => {
+    expect(fizzBuzz(5)).toBe('Buzz');
+    expect(fizzBuzz(20)).toBe('Buzz');
+  });
   test('returns the given number for multiples of neither 3 nor 5', () => {
     expect(fizzBuzz(1)).toBe('1');
     expect(fizzBuzz(22)).toBe('22');
